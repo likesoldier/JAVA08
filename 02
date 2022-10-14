@@ -1,0 +1,25 @@
+class Caaa{
+	double x;
+	double y;
+}
+public class main {
+	public static void main(String args[]) {
+		Caaa obj1;
+		obj1 = new Caaa();
+		obj1.x = 5.2;
+		obj1.y = 3.9;
+		
+		Caaa obj2;
+		obj2 = new Caaa();
+		obj2.x = 6.5;
+		obj2.y = 4.6;
+		
+		Caaa avg;
+		avg = new Caaa();
+		avg.x = (obj1.x + obj2.x) / 2;
+		avg.y = (obj1.y + obj2.y) / 2;
+		System.out.println("obj1 的 x = " + obj1.x + "，obj1 的 y = " + obj1.y);
+		System.out.println("obj2 的 x = " + obj2.x + "，obj2 的 y = " + obj2.y);
+		System.out.println("avg 的 x = " + avg.x + "，avg 的 y = " + avg.y);
+	}	
+}
