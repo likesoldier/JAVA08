@@ -1,0 +1,39 @@
+class CSphere{
+	private int x;
+	private int y;
+	private int z;
+	private double pi = 3.14;
+	private int radius;
+	
+	void setLocation(int a,int b,int c) {
+		x = a;
+		y = b;
+		z = c;
+	}
+	
+	void setRadius(int r) {
+	    radius = r;           
+	}
+	
+	void surfaceArea() {
+		System.out.println("圓表面積 =" + pi * radius * radius);
+	}
+	
+	void volume() {
+		System.out.println("圓體積 =" + pi * radius * radius * radius * 3 / 4);
+	}
+	
+	void showCenter() {
+		System.out.println("圓座標 = (" + x + "," + y + "," + z + ")");
+	}
+}
+public class main {
+	public static void main(String args[]) {	
+		CSphere CS = new CSphere();
+		CS.setLocation(3,4,5);
+		CS.setRadius(1);
+		CS.surfaceArea();
+		CS.volume();
+		CS.showCenter();
+	}
+}
