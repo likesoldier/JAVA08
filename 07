@@ -1,0 +1,32 @@
+class CTest{
+	int x;
+	void test() {	
+		if(x == 0) {
+			System.out.println("此數為0");
+		}
+		else if(x % 2 == 0) {
+			System.out.println("此數為偶數");
+		}
+		else {
+			System.out.println("此數為奇數");
+		}
+	}	
+}
+public class main {
+	public static void main(String args[]) {
+		CTest test1;
+		test1 = new CTest();
+		test1.x = 3;
+		test1.test();
+		
+		CTest test2;
+		test2 = new CTest();
+		test2.x = 8;
+		test2.test();
+		
+		CTest test3;
+		test3 = new CTest();
+		test3.x = 0;
+		test3.test();
+	}
+}
